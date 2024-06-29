@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root {
+    color-scheme: light dark;
+    --red: #db0e0e;
+    --purple: #220435;
+    --dark: #222;
+    --gray: #999;
+    --green: #0c650c;
+    --dark-blue: #586E7D;
+}
+
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark);
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.topnav {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+
+    &.icon {
+        color: white;
+    }
+
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.typing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    font-size: 30px;
+}
+
+.startButton {
+    border-color: #0c650c;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--green);
+}
+
+.word {
+    display: inline-block;
+    margin: 0 5px;
+
+    &.missed {
+        border-bottom: var(--red) 2px solid;
+    }
+
+
+}
+
+.letter {
+    &.correct {
+        color: var(--green);
+        /* border-bottom: var(--green) 2px solid; */
+    }
+
+    &.incorrect {
+        color: var(--red);
+    }
+
+}
+
+input {
+    opacity: 0;
+    cursor: none not-allowed;
+}
+
+.reloadButton {
+    cursor: pointer;
+    display: none;
+    
+}

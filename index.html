@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustType</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <h1>JustType</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="90" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M2 8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm4 2v.01m4-.01v.01m4-.01v.01m4-.01v.01M6 14v.01M18 14v.01M10 14l4 .01" />
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section id="type" class="typing">
+            <div id="gameContainer">
+                <time></time>
+                <p>
+                </p>
+                <input autofocus>
+            </div>
+            <h2 id="wpm"></h2>
+            <h2 id="accuracy"></h2>
+            <a class="reloadButton" script="" id="reload"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="90"
+                    viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M19 13.5A7.5 7.5 0 1 1 11.5 6H20m0 0l-3-3m3 3l-3 3" />
+                </svg></a>
+            <a class="startButton" id="startButton">Start</a>
+        </section>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+</html>
